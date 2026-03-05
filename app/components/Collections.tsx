@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { MessageCircle, CheckCircle2 } from "lucide-react";
-import { bags, BRANDS, CONDITIONS, buildWhatsAppLink, type Bag, type Condition } from "../data/bags";
+import { BRANDS, CONDITIONS, buildWhatsAppLink, type Bag, type Condition } from "../data/bags";
 
 const conditionColor: Record<Condition, string> = {
   "Like New": "bg-emerald-100 text-emerald-800",
@@ -106,7 +106,7 @@ function BagCard({ bag }: { bag: Bag }) {
   );
 }
 
-export default function Collections() {
+export default function Collections({ bags }: { bags: Bag[] }) {
   const [activeBrand, setActiveBrand] = useState("All");
   const [activeCondition, setActiveCondition] = useState<string>("All");
   const [showSold, setShowSold] = useState(false);

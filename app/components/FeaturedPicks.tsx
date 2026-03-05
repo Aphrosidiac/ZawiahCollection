@@ -3,11 +3,10 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { MessageCircle } from "lucide-react";
-import { bags, buildWhatsAppLink } from "../data/bags";
+import { buildWhatsAppLink, type Bag } from "../data/bags";
 
-const featured = bags.filter((b) => b.featured && !b.sold);
-
-export default function FeaturedPicks() {
+export default function FeaturedPicks({ bags }: { bags: Bag[] }) {
+  const featured = bags.filter((b) => b.featured && !b.sold);
   if (featured.length === 0) return null;
 
   const [hero, ...rest] = featured;

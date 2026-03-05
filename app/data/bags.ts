@@ -11,6 +11,7 @@ export interface Bag {
   color: string;
   sold?: boolean;
   featured?: boolean;
+  hidden?: boolean;
 }
 
 export const WHATSAPP_NUMBER = "601XXXXXXXX"; // Replace with Zawiah's real number
