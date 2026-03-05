@@ -33,7 +33,7 @@ export const bags: Bag[] = [
     condition: "Like New",
     price: 3200,
     color: "Monogram",
-    image: "https://images.unsplash.com/photo-1548036161-97a37232d73a?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80",
     description: "Classic LV Neverfull MM in iconic monogram canvas. Comes with dustbag. Barely used.",
     featured: true,
   },
@@ -107,7 +107,7 @@ export const bags: Bag[] = [
     condition: "Good",
     price: 2200,
     color: "Tan",
-    image: "https://images.unsplash.com/photo-1548036161-97a37232d73a?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=600&q=80",
     description: "Burberry TB bag in tan leather with signature TB monogram plaque.",
   },
   {
